@@ -1,0 +1,21 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="/static/login.css">
+</head>
+
+<body>
+  <div class="login">
+    <h1>Sign Up</h1>
+      <form method="POST">
+          <input type="text" name="u" placeholder="Name" required="required" />
+          <input type="text" name="u" placeholder="Username" required="required" />
+          <input type="password" name="p" placeholder="Password" required="required" />
+          <input type="password" name="p" placeholder="Re-Enter Password" required="required" />
+          <button type="submit" class="btn btn-primary btn-block btn-large">Sign Up</button>
+          <a href="{{ url_for('login') }}"><button type="button" class="btn btn-primary btn-block btn-large">Back to login</button></a>
+      </form>
+  </div>
+</body>
+
+</html>
